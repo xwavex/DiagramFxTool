@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="CustomToolLang.plugin.ComponentDiagramView_Tool" file="ComponentDiagramView_Tool.java">
+    <classNode dependClassName="CustomToolLang.plugin.EditorListener" />
+    <classNode dependClassName="com.intellij.openapi.fileEditor.FileEditorManagerListener" />
+    <classNode dependClassName="com.intellij.openapi.project.Project" />
+    <classNode dependClassName="com.intellij.openapi.wm.ToolWindowAnchor" />
+    <classNode dependClassName="com.intellij.util.messages.MessageBusConnection" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="javax.swing.Icon" />
+    <classNode dependClassName="javax.swing.JComponent" />
+    <classNode dependClassName="javax.swing.JLabel" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.plugins.tool.GeneratedTool" />
+  </dependency>
+  <dependency className="CustomToolLang.plugin.CustomToolLang_ProjectPlugin" file="CustomToolLang_ProjectPlugin.java">
+    <classNode dependClassName="CustomToolLang.plugin.ComponentDiagramView_Tool" />
+    <classNode dependClassName="com.intellij.openapi.project.Project" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.ide.tools.BaseTool" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode extendsClassName="jetbrains.mps.plugins.projectplugins.BaseProjectPlugin" />
+  </dependency>
+  <dependency className="CustomToolLang.plugin.EditorListener" file="EditorListener.java">
+    <classNode dependClassName="CustomToolLang.plugin.SingularSelectionListener" />
+    <classNode dependClassName="com.intellij.openapi.fileEditor.FileEditor" />
+    <classNode dependClassName="com.intellij.openapi.fileEditor.FileEditorManager" />
+    <classNode dependClassName="com.intellij.openapi.fileEditor.FileEditorManagerEvent" />
+    <classNode dependClassName="com.intellij.openapi.vfs.VirtualFile" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.Runnable" />
+    <classNode dependClassName="jetbrains.mps.ide.editor.MPSFileNodeEditor" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.Editor" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.selection.SelectionManager" />
+    <classNode dependClassName="jetbrains.mps.smodel.ModelAccess" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="com.intellij.openapi.fileEditor.FileEditorManagerListener" />
+  </dependency>
+  <dependency className="CustomToolLang.plugin.SingularSelectionListener" file="SingularSelectionListener.java">
+    <classNode dependClassName="java.lang.Runnable" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.closures.runtime.Wrappers" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorComponent" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.selection.SingularSelection" />
+    <classNode dependClassName="jetbrains.mps.smodel.ModelAccess" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.selection.SingularSelectionListenerAdapter" />
+  </dependency>
+</dependenciesRoot>
+
